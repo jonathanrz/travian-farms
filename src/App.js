@@ -10,7 +10,7 @@ const troops = [
   "Resheph"
 ]
 
-const farms = [
+const alexandriaFarms = [
   {
     id: 1,
     name: "Aldeia do Bradsan",
@@ -22,6 +22,285 @@ const farms = [
       type: "Guardião das Cinzas",
       amount: 5
     }
+  },
+  {
+    id: 2,
+    name: "Copacabana",
+    localization: "-42|25",
+    distance: 1.4,
+    time: 15,
+    time_to_attack: 45,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 3,
+    name: "Scuffio",
+    localization: "-39|28",
+    distance: 4.5,
+    time: 39,
+    time_to_attack: 60,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 5
+    }
+  },
+  {
+    id: 4,
+    name: "Sparta",
+    localization: "-44|19",
+    distance: 5.8,
+    time: 59,
+    time_to_attack: 90,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 5,
+    name: "Pimpolho",
+    localization: "-40|17",
+    distance: 7.1,
+    time: 71,
+    time_to_attack: 90,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 6,
+    name: "Gate",
+    localization: "-50|29",
+    distance: 9.8,
+    time: 109,
+    time_to_attack: 120,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 5
+    }
+  },
+  {
+    id: 7,
+    name: "Pequena",
+    localization: "-53|28",
+    distance: 12.6,
+    time: 50,
+    time_to_attack: 90,
+    troops: {
+      type: "Anhur",
+      amount: 10
+    }
+  },
+  {
+    id: 8,
+    name: "Cearense",
+    localization: "-39|18",
+    distance: 6.3,
+    time: 64,
+    time_to_attack: 90,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 9,
+    name: "Prepara",
+    localization: "-32|18",
+    distance: 10.8,
+    time: 43,
+    time_to_attack: 75,
+    troops: {
+      type: "Anhur",
+      amount: 4
+    }
+  },
+  {
+    id: 10,
+    name: "Winterfell",
+    localization: "-28|31",
+    distance: 14.8,
+    time: 60,
+    time_to_attack: 90,
+    troops: {
+      type: "Anhur",
+      amount: 4
+    }
+  },
+  {
+    id: 11,
+    name: "Gremio",
+    localization: "-45|31",
+    distance: 8.1,
+    time: 81,
+    time_to_attack: 120,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 12,
+    name: "Jogo Pelado",
+    localization: "-50|31",
+    distance: 11.4,
+    time: 98,
+    time_to_attack: 120,
+    troops: {
+      type: "Khopesh",
+      amount: 10
+    }
+  },
+  {
+    id: 13,
+    name: "01",
+    localization: "-21|31",
+    distance: 21.2,
+    time: 85,
+    time_to_attack: 210,
+    troops: {
+      type: "Anhur",
+      amount: 20
+    }
+  },
+  {
+    id: 14,
+    name: "Oásis Ocupado",
+    localization: "-43|26",
+    distance: 2,
+    time: 17,
+    time_to_attack: 40,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 50
+    }
+  },
+  {
+    id: 15,
+    name: "Merda",
+    localization: "-38|23",
+    distance: 3.2,
+    time: 32,
+    time_to_attack: 75,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 16,
+    name: "Natares",
+    localization: "-29|20",
+    distance: 12.6,
+    time: 51,
+    time_to_attack: 120,
+    troops: {
+      type: "Anhur",
+      amount: 4
+    }
+  },
+  {
+    id: 17,
+    name: "Fênix",
+    localization: "-25|33",
+    distance: 18.4,
+    time: 184,
+    time_to_attack: 420,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 100
+    }
+  },
+  {
+    id: 18,
+    name: "Anápolis",
+    localization: "-26|31",
+    distance: 16.6,
+    time: 166,
+    time_to_attack: 330,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 19,
+    name: "Extermínio",
+    localization: "-22|36",
+    distance: 22.5,
+    time: 129,
+    time_to_attack: 250,
+    troops: {
+      type: "Anhur",
+      amount: 6
+    }
+  },
+  {
+    id: 20,
+    name: "01",
+    localization: "-21|31",
+    distance: 18,
+    time: 110,
+    time_to_attack: 120,
+    troops: {
+      type: "Resheph",
+      amount: 100
+    }
+  }
+]
+
+const troiaFarms = [
+  {
+    id: 101,
+    name: "Natares",
+    localization: "-58|37",
+    distance: 5.8,
+    time: 59,
+    time_to_attack: 120,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 5
+    }
+  },
+  {
+    id: 102,
+    name: "Natares",
+    localization: "-48|33",
+    distance: 5.1,
+    time: 50,
+    time_to_attack: 120,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 5
+    }
+  },
+  {
+    id: 103,
+    name: "Ato I",
+    localization: "-56|37",
+    distance: 4.2,
+    time: 43,
+    time_to_attack: 90,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
+    }
+  },
+  {
+    id: 104,
+    name: "Natares",
+    localization: "-60|28",
+    distance: 9.2,
+    time: 80,
+    time_to_attack: 180,
+    troops: {
+      type: "Milícia Escrava",
+      amount: 8
+    }
   }
 ]
 
@@ -30,7 +309,6 @@ class App extends Component {
     super(props);
 
     this.state = {
-      farms,
       troops,
     };
 
@@ -51,8 +329,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>Alexandria</h1>
         <FarmTable
-          list={farms}
+          list={alexandriaFarms}
+          onDismiss={ function() {} }
+          generateTime={ this.generateTime }
+        />
+        <h1>Troia</h1>
+        <FarmTable
+          list={troiaFarms}
           onDismiss={ function() {} }
           generateTime={ this.generateTime }
         />
