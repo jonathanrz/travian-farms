@@ -311,10 +311,33 @@ class App extends Component {
     this.state = {
       troops,
     };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Alexandria</h1>
+        <FarmTable
+          list={alexandriaFarms}
+          onDismiss={ function() {} }
+        />
+        <h1>Troia</h1>
+        <FarmTable
+          list={troiaFarms}
+          onDismiss={ function() {} }
+        />
+      </div>
+    );
+  }
+}
+
+class FarmTable extends Component {
+  constructor(props) {
+    super(props);
 
     this.generateTime = this.generateTime.bind(this)
   }
-
+  
   generateTime(farm) {
       let times = [farm.time]
       let currentTime = farm.time
@@ -327,28 +350,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <h1>Alexandria</h1>
-        <FarmTable
-          list={alexandriaFarms}
-          onDismiss={ function() {} }
-          generateTime={ this.generateTime }
-        />
-        <h1>Troia</h1>
-        <FarmTable
-          list={troiaFarms}
-          onDismiss={ function() {} }
-          generateTime={ this.generateTime }
-        />
-      </div>
-    );
-  }
-}
-
-class FarmTable extends Component {
-  render() {
-    const { list, onDismiss, generateTime } = this.props;
+    const { list, onDismiss } = this.props;
     return (
       <div className="table">
         <div key="0" className="table-row">
@@ -392,7 +394,7 @@ class FarmTable extends Component {
               {item.troops.amount} {item.troops.type}
             </span>
             <span style={{ width: '35%' }}>
-              {generateTime(item)}
+              {this.generateTime(item)}
             </span>
             <span style={{ width: '10%' }}>
               <button
