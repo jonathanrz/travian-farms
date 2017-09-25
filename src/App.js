@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const maxTimeDerired = 720
+
 const troops = [
   {
     id: 1,
@@ -90,7 +92,7 @@ const alexandriaFarms = [
     localization: "-44|19",
     distance: 5.8,
     time: 59,
-    time_to_attack: 90,
+    time_to_attack: 120,
     troops: {
       type: "Guardião das Cinzas",
       amount: 10
@@ -324,7 +326,7 @@ const troiaFarms = [
     time_to_attack: 90,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 10
+      amount: 8
     }
   },
   {
@@ -340,6 +342,12 @@ const troiaFarms = [
     }
   }
 ]
+
+const necessaryTroopsByTime = (farm) =>{
+  const necessaryTime = farm.time * 2
+  const times = Math.ceil(necessaryTime / farm.time_to_attack)
+  return farm.troops.amount * times
+}
 
 class App extends Component {
   constructor(props) {
@@ -392,7 +400,7 @@ class FarmTable extends Component {
   generateTime(farm) {
       let times = [farm.time]
       let currentTime = farm.time
-      while(currentTime < 720) {
+      while(currentTime < maxTimeDerired) {
         currentTime += farm.time_to_attack + Math.floor((Math.random() * 5) + 1)
         times.push(currentTime)
       }
@@ -442,7 +450,7 @@ class FarmTable extends Component {
               {item.time} - {item.time_to_attack}
             </span>
             <span style={{ width: '15%' }}>
-              {item.troops.amount} {item.troops.type}
+              {item.troops.amount} ({necessaryTroopsByTime(item)}) {item.troops.type}
             </span>
             <span style={{ width: '45%' }}>
               {this.generateTime(item)}
@@ -473,7 +481,7 @@ class TroopsTable extends Component {
   
   necessaryTroops(troop, farms) {
       const farmsAttacked = farms.filter(isFarmAttackedWith(troop.name))
-      return farmsAttacked.reduce(function (accum, current) { return accum + current.troops.amount}, 0)
+      return farmsAttacked.reduce(function (accum, current) { return accum + necessaryTroopsByTime(current)}, 0)
   }
 
   render() {
