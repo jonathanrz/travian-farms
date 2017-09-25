@@ -3,11 +3,26 @@ import logo from './logo.svg';
 import './App.css';
 
 const troops = [
-  "Milícia Escrava",
-  "Guardião das Cinzas",
-  "Khopesh",
-  "Anhur",
-  "Resheph"
+  {
+    id: 1,
+    name: "Milícia Escrava"
+  },
+  {
+    id: 2,
+    name: "Guardião das Cinzas"
+  },
+  {
+    id: 3,
+    name: "Khopesh"
+  },
+  {
+    id: 4,
+    name: "Anhur"
+  },
+  {
+    id: 5,
+    name: "Resheph"
+  }
 ]
 
 const alexandriaFarms = [
@@ -248,7 +263,7 @@ const alexandriaFarms = [
     time_to_attack: 120,
     troops: {
       type: "Resheph",
-      amount: 100
+      amount: 4
     }
   }
 ]
@@ -321,10 +336,18 @@ class App extends Component {
           list={alexandriaFarms}
           onDismiss={ function() {} }
         />
+        <TroopsTable
+          troops={troops}
+          farms={alexandriaFarms}
+        />
         <h1>Troia</h1>
         <FarmTable
           list={troiaFarms}
           onDismiss={ function() {} }
+        />
+        <TroopsTable
+          troops={troops}
+          farms={troiaFarms}
         />
       </div>
     );
@@ -403,6 +426,39 @@ class FarmTable extends Component {
               >
                 Dismiss
               </button>
+            </span>
+          </div>
+        )}
+      </div>
+    );
+  }
+}
+
+const isFarmAttackedWith = (troopName) => (item) => item.troops.type === troopName;
+
+class TroopsTable extends Component {
+  constructor(props) {
+    super(props);
+
+    this.necessaryTroops = this.necessaryTroops.bind(this)
+  }
+  
+  necessaryTroops(troop, farms) {
+      const farmsAttacked = farms.filter(isFarmAttackedWith(troop.name))
+      return farmsAttacked.reduce(function (accum, current) { return accum + current.troops.amount}, 0)
+  }
+
+  render() {
+    const { troops, farms } = this.props;
+    return (
+      <div className="table">
+        { troops.map(item =>
+          <div key={item.id} className="table-row">
+            <span style={{ width: '50%' }}>
+              {item.name}
+            </span>
+            <span style={{ width: '50%' }}>
+              {this.necessaryTroops(item, farms)}
             </span>
           </div>
         )}
