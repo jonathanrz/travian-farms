@@ -17,13 +17,35 @@ const troops = [
   },
   {
     id: 4,
-    name: "Anhur"
+    name: "Explorador Sopdu"
   },
   {
     id: 5,
+    name: "Anhur"
+  },
+  {
+    id: 6,
     name: "Resheph"
   }
 ]
+
+const alexandriaTroops = {
+  "Milícia Escrava": 0,
+  "Guardião das Cinzas": 242,
+  "Khopesh": 30,
+  "Explorador Sopdu": 10,
+  "Anhur": 88,
+  "Resheph": 8
+}
+
+const troiaTroops = {
+  "Milícia Escrava": 13,
+  "Guardião das Cinzas": 18,
+  "Khopesh": 0,
+  "Explorador Sopdu": 0,
+  "Anhur": 0,
+  "Resheph": 0
+}
 
 const alexandriaFarms = [
   {
@@ -330,23 +352,29 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Alexandria</h1>
+      <div className="page">
+        <h1 className="interactions">Alexandria</h1>
+        <h2 className="interactions">Farms</h2>
         <FarmTable
           list={alexandriaFarms}
           onDismiss={ function() {} }
         />
+        <h2 className="interactions">Tropas</h2>
         <TroopsTable
           troops={troops}
+          villageTroops={alexandriaTroops}
           farms={alexandriaFarms}
         />
-        <h1>Troia</h1>
+        <h1 className="interactions">Troia</h1>
+        <h2 className="interactions">Farms</h2>
         <FarmTable
           list={troiaFarms}
           onDismiss={ function() {} }
         />
+        <h2 className="interactions">Tropas</h2>
         <TroopsTable
           troops={troops}
+          villageTroops={troiaTroops}
           farms={troiaFarms}
         />
       </div>
@@ -392,12 +420,12 @@ class FarmTable extends Component {
           <span style={{ width: '15%' }}>
             Tropa
           </span>
-          <span style={{ width: '35%' }}>
+          <span style={{ width: '45%' }}>
             Tempo para ataques
           </span>
-          <span style={{ width: '10%' }}>
+          {/* <span style={{ width: '10%' }}>
             Ações
-          </span>
+          </span> */}
         </div>
         { list.map(item =>
           <div key={item.id} className="table-row">
@@ -416,17 +444,17 @@ class FarmTable extends Component {
             <span style={{ width: '15%' }}>
               {item.troops.amount} {item.troops.type}
             </span>
-            <span style={{ width: '35%' }}>
+            <span style={{ width: '45%' }}>
               {this.generateTime(item)}
             </span>
-            <span style={{ width: '10%' }}>
+            {/* <span style={{ width: '10%' }}>
               <button
                 onClick={() => onDismiss(item.objectID)}
                 className="button-inline"
               >
                 Dismiss
               </button>
-            </span>
+            </span> */}
           </div>
         )}
       </div>
@@ -449,15 +477,29 @@ class TroopsTable extends Component {
   }
 
   render() {
-    const { troops, farms } = this.props;
+    const { troops, villageTroops, farms } = this.props;
     return (
       <div className="table">
+        <div key="0" className="table-row">
+          <span style={{ width: '33%' }}>
+            Nome
+          </span>
+          <span style={{ width: '33%' }}>
+            Atual
+          </span>
+          <span style={{ width: '34%' }}>
+            Necessário
+          </span>
+        </div>
         { troops.map(item =>
           <div key={item.id} className="table-row">
-            <span style={{ width: '50%' }}>
+            <span style={{ width: '33%' }}>
               {item.name}
             </span>
-            <span style={{ width: '50%' }}>
+            <span style={{ width: '33%' }}>
+              {villageTroops[item.name]}
+            </span>
+            <span style={{ width: '34%' }}>
               {this.necessaryTroops(item, farms)}
             </span>
           </div>
