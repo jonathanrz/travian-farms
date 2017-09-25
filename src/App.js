@@ -33,16 +33,16 @@ const troops = [
 
 const alexandriaTroops = {
   "Milícia Escrava": 0,
-  "Guardião das Cinzas": 242,
-  "Khopesh": 30,
+  "Guardião das Cinzas": 275,
+  "Khopesh": 92,
   "Explorador Sopdu": 10,
-  "Anhur": 88,
-  "Resheph": 8
+  "Anhur": 113,
+  "Resheph": 12
 }
 
 const troiaTroops = {
   "Milícia Escrava": 13,
-  "Guardião das Cinzas": 18,
+  "Guardião das Cinzas": 38,
   "Khopesh": 0,
   "Explorador Sopdu": 0,
   "Anhur": 0,
@@ -68,10 +68,10 @@ const alexandriaFarms = [
     localization: "-42|25",
     distance: 1.4,
     time: 15,
-    time_to_attack: 45,
+    time_to_attack: 30,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 10
+      amount: 5
     }
   },
   {
@@ -92,10 +92,10 @@ const alexandriaFarms = [
     localization: "-44|19",
     distance: 5.8,
     time: 59,
-    time_to_attack: 120,
+    time_to_attack: 65,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 10
+      amount: 5
     }
   },
   {
@@ -103,11 +103,11 @@ const alexandriaFarms = [
     name: "Pimpolho",
     localization: "-40|17",
     distance: 7.1,
-    time: 71,
-    time_to_attack: 90,
+    time: 61,
+    time_to_attack: 60,
     troops: {
-      type: "Guardião das Cinzas",
-      amount: 10
+      type: "Khopesh",
+      amount: 5
     }
   },
   {
@@ -127,7 +127,7 @@ const alexandriaFarms = [
     name: "Pequena",
     localization: "-53|28",
     distance: 12.6,
-    time: 50,
+    time: 60,
     time_to_attack: 90,
     troops: {
       type: "Anhur",
@@ -139,10 +139,10 @@ const alexandriaFarms = [
     name: "Cearense",
     localization: "-39|18",
     distance: 6.3,
-    time: 64,
-    time_to_attack: 90,
+    time: 55,
+    time_to_attack: 60,
     troops: {
-      type: "Guardião das Cinzas",
+      type: "Khopesh",
       amount: 10
     }
   },
@@ -164,22 +164,10 @@ const alexandriaFarms = [
     localization: "-28|31",
     distance: 14.8,
     time: 60,
-    time_to_attack: 90,
+    time_to_attack: 60,
     troops: {
       type: "Anhur",
       amount: 4
-    }
-  },
-  {
-    id: 11,
-    name: "Gremio",
-    localization: "-45|31",
-    distance: 8.1,
-    time: 81,
-    time_to_attack: 120,
-    troops: {
-      type: "Guardião das Cinzas",
-      amount: 10
     }
   },
   {
@@ -188,22 +176,10 @@ const alexandriaFarms = [
     localization: "-50|31",
     distance: 11.4,
     time: 98,
-    time_to_attack: 120,
+    time_to_attack: 50,
     troops: {
       type: "Khopesh",
       amount: 10
-    }
-  },
-  {
-    id: 13,
-    name: "01",
-    localization: "-21|31",
-    distance: 21.2,
-    time: 85,
-    time_to_attack: 210,
-    troops: {
-      type: "Anhur",
-      amount: 20
     }
   },
   {
@@ -224,19 +200,19 @@ const alexandriaFarms = [
     localization: "-38|23",
     distance: 3.2,
     time: 32,
-    time_to_attack: 75,
+    time_to_attack: 45,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 10
+      amount: 5
     }
   },
   {
     id: 16,
-    name: "Natares",
-    localization: "-29|20",
-    distance: 12.6,
-    time: 51,
-    time_to_attack: 120,
+    name: "Gengis Khan",
+    localization: "-22|30",
+    distance: 19.9,
+    time: 80,
+    time_to_attack: 45,
     troops: {
       type: "Anhur",
       amount: 4
@@ -244,14 +220,14 @@ const alexandriaFarms = [
   },
   {
     id: 17,
-    name: "Fênix",
-    localization: "-25|33",
-    distance: 18.4,
-    time: 184,
-    time_to_attack: 420,
+    name: "Natares",
+    localization: "-19|32",
+    distance: 23.4,
+    time: 93,
+    time_to_attack: 50,
     troops: {
-      type: "Guardião das Cinzas",
-      amount: 100
+      type: "Anhur",
+      amount: 4
     }
   },
   {
@@ -259,11 +235,11 @@ const alexandriaFarms = [
     name: "Anápolis",
     localization: "-26|31",
     distance: 16.6,
-    time: 166,
-    time_to_attack: 330,
+    time: 67,
+    time_to_attack: 60,
     troops: {
-      type: "Guardião das Cinzas",
-      amount: 10
+      type: "Anhur",
+      amount: 5
     }
   },
   {
@@ -272,7 +248,7 @@ const alexandriaFarms = [
     localization: "-22|36",
     distance: 22.5,
     time: 129,
-    time_to_attack: 250,
+    time_to_attack: 65,
     troops: {
       type: "Anhur",
       amount: 6
@@ -284,10 +260,22 @@ const alexandriaFarms = [
     localization: "-21|31",
     distance: 18,
     time: 110,
-    time_to_attack: 120,
+    time_to_attack: 60,
     troops: {
       type: "Resheph",
       amount: 4
+    }
+  },
+  {
+    id: 21,
+    name: "Bas-tyra",
+    localization: "-50|21",
+    distance: 9.5,
+    time: 82,
+    time_to_attack: 90,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 100
     }
   }
 ]
@@ -339,6 +327,30 @@ const troiaFarms = [
     troops: {
       type: "Milícia Escrava",
       amount: 8
+    }
+  },
+  {
+    id: 105,
+    name: "01.",
+    localization: "-46|34",
+    distance: 7,
+    time: 50,
+    time_to_attack: 60,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 5
+    }
+  },
+  {
+    id: 106,
+    name: "City of Hell",
+    localization: "-51|32",
+    distance: 2.8,
+    time: 28,
+    time_to_attack: 60,
+    troops: {
+      type: "Guardião das Cinzas",
+      amount: 10
     }
   }
 ]
