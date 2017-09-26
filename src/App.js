@@ -42,7 +42,7 @@ const alexandriaTroops = {
 
 const troiaTroops = {
   "Milícia Escrava": 13,
-  "Guardião das Cinzas": 38,
+  "Guardião das Cinzas": 58,
   "Khopesh": 0,
   "Explorador Sopdu": 0,
   "Anhur": 0,
@@ -251,7 +251,7 @@ const alexandriaFarms = [
     time_to_attack: 65,
     troops: {
       type: "Anhur",
-      amount: 6
+      amount: 10
     }
   },
   {
@@ -271,11 +271,11 @@ const alexandriaFarms = [
     name: "Bas-tyra",
     localization: "-50|21",
     distance: 9.5,
-    time: 82,
-    time_to_attack: 90,
+    time: 95,
+    time_to_attack: 190,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 100
+      amount: 120
     }
   }
 ]
@@ -314,7 +314,7 @@ const troiaFarms = [
     time_to_attack: 90,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 8
+      amount: 13
     }
   },
   {
@@ -338,7 +338,7 @@ const troiaFarms = [
     time_to_attack: 60,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 5
+      amount: 10
     }
   },
   {
@@ -350,7 +350,7 @@ const troiaFarms = [
     time_to_attack: 60,
     troops: {
       type: "Guardião das Cinzas",
-      amount: 10
+      amount: 15
     }
   }
 ]
@@ -499,7 +499,7 @@ class TroopsTable extends Component {
   render() {
     const { troops, villageTroops, farms } = this.props;
     return (
-      <div className="table">
+      <div className="table" style={{ width: '50%', margin: 'auto' }}>
         <div key="0" className="table-row">
           <span style={{ width: '33%' }}>
             Nome
