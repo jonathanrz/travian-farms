@@ -1,0 +1,74 @@
+[
+  {
+    "id": 101,
+    "name": "Natares",
+    "localization": "-58|37",
+    "distance": 5.8,
+    "time": 59,
+    "time_to_attack": 120,
+    "troops": {
+      "type": "Guardião das Cinzas",
+      "amount": 5
+    }
+  },
+  {
+    "id": 102,
+    "name": "Natares",
+    "localization": "-48|33",
+    "distance": 5.1,
+    "time": 50,
+    "time_to_attack": 120,
+    "troops": {
+      "type": "Guardião das Cinzas",
+      "amount": 5
+    }
+  },
+  {
+    "id": 103,
+    "name": "Ato I",
+    "localization": "-56|37",
+    "distance": 4.2,
+    "time": 43,
+    "time_to_attack": 90,
+    "troops": {
+      "type": "Guardião das Cinzas",
+      "amount": 13
+    }
+  },
+  {
+    "id": 104,
+    "name": "Natares",
+    "localization": "-60|28",
+    "distance": 9.2,
+    "time": 80,
+    "time_to_attack": 180,
+    "troops": {
+      "type": "Milícia Escrava",
+      "amount": 8
+    }
+  },
+  {
+    "id": 105,
+    "name": "01.",
+    "localization": "-46|34",
+    "distance": 7,
+    "time": 50,
+    "time_to_attack": 60,
+    "troops": {
+      "type": "Guardião das Cinzas",
+      "amount": 10
+    }
+  },
+  {
+    "id": 106,
+    "name": "City of Hell",
+    "localization": "-51|32",
+    "distance": 2.8,
+    "time": 28,
+    "time_to_attack": 60,
+    "troops": {
+      "type": "Guardião das Cinzas",
+      "amount": 15
+    }
+  }
+]
