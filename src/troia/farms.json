@@ -32,7 +32,7 @@
     "time_to_attack": 90,
     "troops": {
       "type": "Guardião das Cinzas",
-      "amount": 13
+      "amount": 15
     }
   },
   {
@@ -68,7 +68,7 @@
     "time_to_attack": 60,
     "troops": {
       "type": "Guardião das Cinzas",
-      "amount": 15
+      "amount": 20
     }
   }
 ]
