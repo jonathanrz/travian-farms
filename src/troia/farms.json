@@ -29,7 +29,7 @@
     "localization": "-56|37",
     "distance": 4.2,
     "time": 43,
-    "time_to_attack": 90,
+    "time_to_attack": 60,
     "troops": {
       "type": "Guardião das Cinzas",
       "amount": 15

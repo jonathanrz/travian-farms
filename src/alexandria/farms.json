@@ -53,10 +53,10 @@
     "localization": "-40|17",
     "distance": 7.1,
     "time": 61,
-    "time_to_attack": 60,
+    "time_to_attack": 62,
     "troops": {
       "type": "Khopesh",
-      "amount": 10
+      "amount": 15
     }
   },
   {
@@ -77,7 +77,7 @@
     "localization": "-53|28",
     "distance": 12.6,
     "time": 60,
-    "time_to_attack": 90,
+    "time_to_attack": 60,
     "troops": {
       "type": "Anhur",
       "amount": 10
@@ -137,7 +137,7 @@
     "localization": "-43|26",
     "distance": 2,
     "time": 17,
-    "time_to_attack": 40,
+    "time_to_attack": 30,
     "troops": {
       "type": "Guardião das Cinzas",
       "amount": 60
@@ -185,10 +185,10 @@
     "localization": "-26|31",
     "distance": 16.6,
     "time": 67,
-    "time_to_attack": 60,
+    "time_to_attack": 70,
     "troops": {
       "type": "Anhur",
-      "amount": 5
+      "amount": 10
     }
   },
   {
@@ -221,7 +221,7 @@
     "localization": "-50|21",
     "distance": 9.5,
     "time": 95,
-    "time_to_attack": 190,
+    "time_to_attack": 300,
     "troops": {
       "type": "Guardião das Cinzas",
       "amount": 150
