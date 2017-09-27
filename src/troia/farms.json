@@ -7,7 +7,7 @@
     "time": 59,
     "time_to_attack": 120,
     "troops": {
-      "type": "Guardião das Cinzas",
+      "type": "Guardião",
       "amount": 5
     }
   },
@@ -19,7 +19,7 @@
     "time": 50,
     "time_to_attack": 120,
     "troops": {
-      "type": "Guardião das Cinzas",
+      "type": "Guardião",
       "amount": 5
     }
   },
@@ -31,7 +31,7 @@
     "time": 43,
     "time_to_attack": 60,
     "troops": {
-      "type": "Guardião das Cinzas",
+      "type": "Guardião",
       "amount": 15
     }
   },
@@ -55,7 +55,7 @@
     "time": 50,
     "time_to_attack": 60,
     "troops": {
-      "type": "Guardião das Cinzas",
+      "type": "Guardião",
       "amount": 10
     }
   },
@@ -67,7 +67,7 @@
     "time": 28,
     "time_to_attack": 60,
     "troops": {
-      "type": "Guardião das Cinzas",
+      "type": "Guardião",
       "amount": 20
     }
   }

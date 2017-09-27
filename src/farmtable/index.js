@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+const compareTroops = (a, b) => {
+  let compare = a.troops.type.localeCompare(b.troops.type)
+  if(compare === 0)
+    compare = a.troops.amount - b.troops.amount
+  return compare
+}
+
 export default class FarmTable extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +51,7 @@ export default class FarmTable extends Component {
             Tempo para ataques
           </span>
         </div>
-        { list.map(item =>
+        { list.sort(compareTroops).map(item =>
           <div key={item.id} className="table-row">
             <span style={{ width: '15%' }}>
               {item.name}
