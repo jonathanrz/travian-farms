@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Aldeia do Bradsan",
+    "villagers": 37,
     "localization": "-43|24",
     "distance": 2,
     "time": 17,
@@ -14,6 +15,7 @@
   {
     "id": 2,
     "name": "Copacabana",
+    "villagers": 75,
     "localization": "-42|25",
     "distance": 1.4,
     "time": 15,
@@ -26,6 +28,7 @@
   {
     "id": 3,
     "name": "Scuffio",
+    "villagers": 16,
     "localization": "-39|28",
     "distance": 4.5,
     "time": 39,
@@ -38,6 +41,7 @@
   {
     "id": 4,
     "name": "Sparta",
+    "villagers": 57,
     "localization": "-44|19",
     "distance": 5.8,
     "time": 59,
@@ -50,6 +54,7 @@
   {
     "id": 5,
     "name": "Pimpolho",
+    "villagers": 113,
     "localization": "-40|17",
     "distance": 7.1,
     "time": 61,
@@ -62,6 +67,7 @@
   {
     "id": 6,
     "name": "Gate",
+    "villagers": 66,
     "localization": "-50|29",
     "distance": 9.8,
     "time": 109,
@@ -74,6 +80,7 @@
   {
     "id": 7,
     "name": "Pequena",
+    "villagers": 76,
     "localization": "-53|28",
     "distance": 12.6,
     "time": 60,
@@ -86,6 +93,7 @@
   {
     "id": 8,
     "name": "Cearense",
+    "villagers": 127,
     "localization": "-39|18",
     "distance": 6.3,
     "time": 55,
@@ -98,6 +106,7 @@
   {
     "id": 9,
     "name": "Prepara",
+    "villagers": 94,
     "localization": "-32|18",
     "distance": 10.8,
     "time": 43,
@@ -110,6 +119,7 @@
   {
     "id": 10,
     "name": "Winterfell",
+    "villagers": 64,
     "localization": "-28|31",
     "distance": 14.8,
     "time": 60,
@@ -122,6 +132,7 @@
   {
     "id": 12,
     "name": "Jogo Pelado",
+    "villagers": 57,
     "localization": "-50|31",
     "distance": 11.4,
     "time": 98,
@@ -134,10 +145,11 @@
   {
     "id": 14,
     "name": "Oásis Ocupado",
+    "villagers": 0,
     "localization": "-43|26",
     "distance": 2,
     "time": 17,
-    "time_to_attack": 30,
+    "time_to_attack": 35,
     "troops": {
       "type": "Guardião",
       "amount": 60
@@ -146,6 +158,7 @@
   {
     "id": 15,
     "name": "Merda",
+    "villagers": 64,
     "localization": "-38|23",
     "distance": 3.2,
     "time": 32,
@@ -158,6 +171,7 @@
   {
     "id": 16,
     "name": "Gengis Khan",
+    "villagers": 94,
     "localization": "-22|30",
     "distance": 19.9,
     "time": 80,
@@ -170,6 +184,7 @@
   {
     "id": 17,
     "name": "Natares",
+    "villagers": 30,
     "localization": "-19|32",
     "distance": 23.4,
     "time": 93,
@@ -182,6 +197,7 @@
   {
     "id": 18,
     "name": "Anápolis",
+    "villagers": 87,
     "localization": "-26|31",
     "distance": 16.6,
     "time": 67,
@@ -194,6 +210,7 @@
   {
     "id": 19,
     "name": "Extermínio",
+    "villagers": 140,
     "localization": "-22|36",
     "distance": 22.5,
     "time": 129,
@@ -206,10 +223,11 @@
   {
     "id": 20,
     "name": "01",
+    "villagers": 106,
     "localization": "-21|31",
     "distance": 18,
     "time": 110,
-    "time_to_attack": 60,
+    "time_to_attack": 74,
     "troops": {
       "type": "Resheph",
       "amount": 4
@@ -218,6 +236,7 @@
   {
     "id": 21,
     "name": "Bas-tyra",
+    "villagers": 176,
     "localization": "-50|21",
     "distance": 9.5,
     "time": 95,
@@ -225,6 +244,201 @@
     "troops": {
       "type": "Guardião",
       "amount": 150
+    }
+  },
+  {
+    "id": 22,
+    "name": "Homicida",
+    "villagers": 143,
+    "localization": "-46|18",
+    "distance": 7.8,
+    "time": 0,
+    "time_to_attack": 0,
+    "troops": {
+      "type": "Z",
+      "amount": 0
+    }
+  },
+  {
+    "id": 23,
+    "name": "Aldeia de Zeus",
+    "villagers": 96,
+    "localization": "-43|14",
+    "distance": 10.2,
+    "time": 0,
+    "time_to_attack": 0,
+    "troops": {
+      "type": "Z",
+      "amount": 0
+    }
+  },
+  {
+    "id": 24,
+    "name": "Aldeia de Superrico",
+    "villagers": 82,
+    "localization": "-40|12",
+    "distance": 12,
+    "time": 49,
+    "time_to_attack": 100,
+    "troops": {
+      "type": "Anhur",
+      "amount": 4
+    }
+  },
+  {
+    "id": 25,
+    "name": "Docinho",
+    "villagers": 95,
+    "localization": "-17|16",
+    "distance": 25.3,
+    "time": 102,
+    "time_to_attack": 205,
+    "troops": {
+      "type": "Anhur",
+      "amount": 4
+    }
+  },
+  {
+    "id": 26,
+    "name": "01",
+    "villagers": 97,
+    "localization": "-19|15",
+    "distance": 23.8,
+    "time": 95,
+    "time_to_attack": 190,
+    "troops": {
+      "type": "Anhur",
+      "amount": 4
+    }
+  },
+  {
+    "id": 27,
+    "name": "Zona 01",
+    "villagers": 190,
+    "localization": "-24|11",
+    "distance": 21.4,
+    "time": 0,
+    "time_to_attack": 0,
+    "troops": {
+      "type": "Z",
+      "amount": 0
+    }
+  },
+  {
+    "id": 28,
+    "name": "Kreanga",
+    "villagers": 77,
+    "localization": "-44|8",
+    "distance": 16.3,
+    "time": 65,
+    "time_to_attack": 130,
+    "troops": {
+      "type": "Anhur",
+      "amount": 4
+    }
+  },
+  {
+    "id": 29,
+    "name": "1 - Trono de Atena",
+    "villagers": 68,
+    "localization": "-44|10",
+    "distance": 14.3,
+    "time": 58,
+    "time_to_attack": 120,
+    "troops": {
+      "type": "Anhur",
+      "amount": 4
+    }
+  },
+  {
+    "id": 30,
+    "name": "Loureiro",
+    "villagers": 184,
+    "localization": "-47|10",
+    "distance": 15.2,
+    "time": 152,
+    "time_to_attack": 152,
+    "troops": {
+      "type": "Guardião",
+      "amount": 10
+    }
+  },
+  {
+    "id": 32,
+    "name": "Hellhein",
+    "villagers": 106,
+    "localization": "-39|36",
+    "distance": 12.2,
+    "time": 49,
+    "time_to_attack": 110,
+    "troops": {
+      "type": "Anhur",
+      "amount": 8
+    }
+  },
+  {
+    "id": 33,
+    "name": "Templo de Neith",
+    "villagers": 205,
+    "localization": "-12|5",
+    "distance": 16.3,
+    "time": 0,
+    "time_to_attack": 0,
+    "troops": {
+      "type": "Z",
+      "amount": 0
+    }
+  },
+  {
+    "id": 34,
+    "name": "Templo de Ísis",
+    "villagers": 16,
+    "localization": "-31|28",
+    "distance": 10.8,
+    "time": 68,
+    "time_to_attack": 70,
+    "troops": {
+      "type": "Guardião",
+      "amount": 10
+    }
+  },
+  {
+    "id": 35,
+    "name": "01 Naruto",
+    "villagers": 97,
+    "localization": "-34|27",
+    "distance": 7.6,
+    "time": 77,
+    "time_to_attack": 80,
+    "troops": {
+      "type": "Guardião",
+      "amount": 15
+    }
+  },
+  {
+    "id": 36,
+    "name": "01-Chucky",
+    "villagers": 167,
+    "localization": "-31|25",
+    "distance": 10,
+    "time": 0,
+    "time_to_attack": 0,
+    "troops": {
+      "type": "Z",
+      "amount": 0
+    }
+  },
+  {
+    "id": 37,
+    "name": "01 Prodygno BW",
+    "villagers": 143,
+    "localization": "-30|26",
+    "distance": 11.2,
+    "time": 45,
+    "time_to_attack": 90,
+    "troops": {
+      "type": "Anhur",
+      "amount": 8
     }
   }
 ]

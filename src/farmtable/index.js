@@ -15,6 +15,7 @@ export default class FarmTable extends Component {
   }
   
   generateTime(farm) {
+    if(farm.time === 0) return ""
     const { maxTimeDerired } = this.props;
 
     let times = [farm.time]
@@ -35,6 +36,9 @@ export default class FarmTable extends Component {
           <span style={{ width: '15%' }}>
             Nome
           </span>
+          <span style={{ width: '5%' }}>
+            Habitantes
+          </span>
           <span style={{ width: '8%' }}>
             Localização
           </span>
@@ -47,7 +51,7 @@ export default class FarmTable extends Component {
           <span style={{ width: '15%' }}>
             Tropa
           </span>
-          <span style={{ width: '45%' }}>
+          <span style={{ width: '40%' }}>
             Tempo para ataques
           </span>
         </div>
@@ -55,6 +59,9 @@ export default class FarmTable extends Component {
           <div key={item.id} className="table-row">
             <span style={{ width: '15%' }}>
               {item.name}
+            </span>
+            <span style={{ width: '5%' }}>
+              {item.villagers}
             </span>
             <span style={{ width: '8%' }}>
               {item.localization}
@@ -68,7 +75,7 @@ export default class FarmTable extends Component {
             <span style={{ width: '15%' }}>
               {item.troops.amount} ({necessaryTroopsByTime(item)}) {item.troops.type}
             </span>
-            <span style={{ width: '45%' }}>
+            <span style={{ width: '40%' }}>
               {this.generateTime(item)}
             </span>
           </div>
